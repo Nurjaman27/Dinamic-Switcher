@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="content" >
+                <label for="">Masukan Hobi Anda</label>
+                <input type="text" placeholder="masukan hobi anda" id="hobbyInput" class="input">
+                <button onclick="saveHobbyInput()" class="botton">SAVE</button>
+                <div class="list">
+                    <h2>List</h2>
+                    <ol id="result"></ol>
+                </div>
+                
+                <br>
+                <h4>Pindah List</h4>
+                <label for="">Element ke</label>
+                <input placeholder="from" type="number" id="from" class="input" />
+                <label for="">Pindah ke</label>
+                <input placeholder="to" type="number" id="to" class="input" />
+                <button onclick="switcher()" class="botton">switch</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
